@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:fermium-slim' } }
+    agent { docker { image 'node:16-alpine' } }
     stages {
         stage('build') {
             steps {
